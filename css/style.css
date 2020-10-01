@@ -1,9 +1,19 @@
-body{background-color: royalblue; 
+body {
+  background-color: royalblue; 
 }
 
-header {font-size: 100px;}
-header {}
+header {
+  font-size: 100px;
+}
 
-#image 
+p {
+  font-size: larger; 
+  font-family: 'Lucida Sans';  
+}
 
-p {font-size: larger; font-family: 'Lucida Sans'}
+
+#image {
+  width: 500px;
+  height: 100;
+  border-style: solid;
+}
