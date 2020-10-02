@@ -1,3 +1,67 @@
 'use strict';
 
-console.log('hello world');
+alert('Welcome to my page! I am going to ask you a couple questions.')
+
+var name = prompt('What is your name?');
+//console.log('Hi ' + name);
+alert('it\s nice to meet you ' + name);
+
+//question 1
+var home = prompt(name + ' am I from Washington State?').toUpperCase();
+
+if (home === 'YES' || home === 'Y') {
+  //console.log('No, I am not from Washington.');
+  alert('No, I am not from Washington.')
+}
+if (home === 'NO' || home === 'N')
+  //console.log('You are correct! I am actualy from Kansas!')
+  alert('You are correct! I am actualy from Kansas!')
+
+//question 2
+var child = prompt(name + ' do I have a daughter?').toUpperCase();
+
+if (child === 'YES' || child === 'Y') {
+  //console.log('Yes, I do have a daughter her name is AInsley');
+  alert('Yes, I do have a daughter, her name is AInsley.')
+}
+if (child === 'NO' || child === 'N') {
+  //console.log('Sorry, that is not correct')
+  alert('Sorry, that is not correct. I do have a daughter, and her name is AInsley.')
+}
+
+//question 3
+var military = prompt(name + ' did I serve in the military?').toUpperCase();
+
+if (military === 'YES' || military === 'Y') {
+  //console.log('Yes, I was in the United States Navy for 5 years.');
+  alert('Yes, I was in the US Navy for 5 years.')
+}
+if (military === 'NO' || military === 'N') {
+  //console.log('Sorry, that is not correct')
+  alert('Sorry, that is not correct. I served 5 years in the US Navy.')
+}
+
+//question 4
+var pets = prompt(name + ' do I have 7 cats?').toUpperCase();
+
+if (pets === 'YES' || pets === 'Y') {
+  //console.log('No,  haha, I do not. I actually have 2 cats and 1 dog.');
+  alert('No,  haha, I do not. I actually have 2 cats and 1 dog.')
+}
+if (pets === 'NO' || pets === 'N') {
+  //console.log('Correct!, I only have 2 and a dog!')
+  alert('Correct!, I only have 2 and a dog!')
+}
+
+//question 5
+var lightsaber = prompt(name + ' have I ever fought in a lightsaber club?').toUpperCase();
+
+if (lightsaber === 'YES' || lightsaber === 'Y') {
+  console.log('Yes! I actually have and it was a lot of fun. May the Force be with you!');
+  alert('Yes! I actually have and it was a lot of fun. May the Force be with you!')
+}
+if (lightsaber === 'NO' || lightsaber === 'N') {
+  console.log('The Force is not with you today, I did in fact fight in a lightsaber club.')
+  alert('The Force is not with you today, I did in fact fight in a lightsaber club.')
+}
+alert("Thank you for playing, " + name)

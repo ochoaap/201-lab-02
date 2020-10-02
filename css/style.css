@@ -1,19 +1,25 @@
 body {
-  background-color: royalblue; 
+  background-color:darkblue; 
 }
 
 header {
+  background-color: darkred;
   font-size: 100px;
+  font-family: fantasy;
+  text-align: center;
 }
 
 p {
-  font-size: larger; 
-  font-family: 'Lucida Sans';  
+  font-size: 36px; 
+  font-style: oblique;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  ;
+  color: gold;
+  
 }
-
 
 #image {
   width: 500px;
   height: 100;
-  border-style: solid;
+  float: left; 
+  margin: 0px 20px 0px 0px;
 }
