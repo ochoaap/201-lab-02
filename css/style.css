@@ -10,7 +10,7 @@ header {
 }
 
 p {
-  font-size: 36px; 
+  font-size: 35px; 
   font-style: oblique;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  ;
   color: gold;
@@ -23,3 +23,23 @@ p {
   float: left; 
   margin: 0px 20px 0px 0px;
 }
+
+#lists{
+  font-style: normal;
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+  float: right;
+  width: 300px;
+}
+
+#work{
+  font-style: normal;
+  font-size: 30px;
+  color: white;
+  float: left;
+  margin-top: 30px;
+  
+}
+
+footer{clear: both;}
