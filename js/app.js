@@ -6,7 +6,7 @@ var name = prompt('What is your name?');
 //console.log('Hi ' + name);
 alert('it\s nice to meet you ' + name);
 
-var correct=0
+var correct = 0
 
 // //question 1
 var home = prompt(name + ' am I from Washington State?').toUpperCase();
@@ -15,7 +15,7 @@ if (home === 'YES' || home === 'Y') {
   //console.log('No, I am not from Washington.');
   alert('No, I am not from Washington.')
 }
-if (home === 'NO' || home === 'N'){
+if (home === 'NO' || home === 'N') {
   //console.log('You are correct! I am actualy from Kansas!')
   alert('You are correct! I am actualy from Kansas!')
   correct++
@@ -74,46 +74,50 @@ if (lightsaber === 'NO' || lightsaber === 'N') {
 }
 
 // Question 6 
-for (var i = 0; i < 4; i++){
-  
+for (var i = 0; i < 4; i++) {
+
   var car = prompt(name + " how many cars have I owned? Between 1 and 10?")
-  if(car === '8'){
+  if (car === '8') {
     alert('Yes, that is correct!')
     correct++
-     break
-   }
-   if(i===3){
-     alert('the correct answer was 8')
     break
   }
-  
-  if( car < '8'){
+  if (i === 3) {
+    alert('the correct answer was 8')
+    break
+  }
+
+  if (car < '8') {
     alert('too low, try again')
   }
-  if(car > '8'){
+  if (car > '8') {
     alert('too high, try again')
   }
 }
 // question 7 
 var colors = ['blue', 'purple', 'red', 'green'];
-for (var i = 0;  i < 6; i++){
-  var favecolor = prompt(name + ' what is my favorite color?');{
-    if(colors.includes = favecolor){
+let totalCount = 0
+while (totalCount < 6) {
+  var favecolor = prompt(name + ' what is my favorite color?');
+  for (let i = 0; i < colors.length; i++) {
+    if (colors[i] === favecolor) {
       alert('Yes that is correct!')
+      totalCount = 8
       correct++
       break;
+    }
   }
-    
-    alert('No that is not correct')
-
+  if(totalCount < 6){
+    alert('No that is not correct');
+  }
+  totalCount += 1
 }
-}
 
-if(i===6){
+if (i === 6) {
   alert("The correct answers were blue, red, green, or purple!")
 }
 
 
 
-  alert("Thank you for playing, " + name);
-  alert("you got " + correct + ' correct answer(s)');
+alert("Thank you for playing, " + name);
+alert("you got " + correct + ' correct answer(s)');
