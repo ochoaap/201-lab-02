@@ -107,7 +107,7 @@ while (totalCount < 6){
       break;
     }
   }
-  if(totalCount < 6){
+  if (totalCount < 6){
     alert('No that is not correct');
   }
   totalCount += 1
