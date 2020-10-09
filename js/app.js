@@ -137,11 +137,11 @@ function questionSeven() {
     }
     totalCount += 1;
   }
-
-  if (i === 6) {
-    alert('The correct answers were blue, red, green, or purple!');
+    if (totalCount < 8) {
+      alert('The correct answers were blue, red, green, or purple!');
+    }
   }
-}
+  
 questionSeven();
 
 
